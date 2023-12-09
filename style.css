@@ -15,7 +15,7 @@
   max-width: 540px;
   background: white;
   margin: 100px auto 20px;
-  padding: 40px 30px 70px;
+  padding: 40px 30px;
   border-radius: 5px;
 }
 .todoContainer .todo-app .todo-header{
@@ -64,6 +64,7 @@
   user-select: none;
   cursor: pointer;
   position: relative;
+  flex: 1 1 80%;
 }
 .todoContainer .todo-app .todoList ul li::before{
   content: '';
@@ -72,10 +73,18 @@
   height: 28px;
   position: absolute;
   background-size: cover;
-  left: 10px;
+  left: 5px;
   background-position: center;
   top: 10px;
   border-radius: 50%;
+}
+.todoContainer .todo-app .todoList ul .actionSection, .listWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.listWrapper{
+  flex: 1;
 }
 .todoContainer .todo-app .todoList ul li.checked{
   color: #555;
@@ -84,4 +93,13 @@
 .todoContainer .todo-app .todoList ul li.checked::before{
   content: '';
   background-image: url('images/checked.png');
+}
+.todoContainer .todo-app .todoList ul .actionSection{
+  flex: 1 1 auto;
+  }
+.todoContainer .todo-app .todoList ul .actionSection span{
+  font-size: 22px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
 }
