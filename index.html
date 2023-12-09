@@ -4,88 +4,33 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lading Page</title>
+    <title>To-Do-JS</title>
     <link href="style.css" rel="stylesheet"/>
+    <script src='scripts/script.js' defer></script>
   </head>
   <body>
-    <!-- header section -->
-    <header>
-      <nav>
-        <div class="page-logo">
-          <span>Header logo</span>
+      <main>
+        <div class="todoContainer">
+            <div class="todo-app">
+                <div class='todo-header'>
+                    <h1>to-do App</h1>
+                    <img src='./images/icon.png' alt='to-do icon'/>
+                </div>
+                <div class="todo-handler">
+                    <input type='text' id='todo-text' placeholder="Enter your list" />
+                    <button>Add</button>
+                </div>
+              <div class="todoList">
+                <ul>
+                  <!-- <li class="checked">list 1</li>
+                  <li>list 1</li>
+                  <li>list 1</li>
+                  <li>list 1</li> -->
+                </ul>
+              </div>
+            </div>
         </div>
-        <ul>
-          <li>
-            <a href="#">header Link 1</a>
-          </li>
-          <li><a href="#">header Link 2</</li>
-          <li><a href="#">header Link 3</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="hero-section">
-        <div class="left-side">
-          
-          <h1>This website is awesome</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. In nisi numquam, incidunt blanditiis provident nihil omnis rerum rem quos? Rerum id unde recusandae, ea dolores laboriosam ut possimus? Veritatis, voluptatum!</p>
-          <button>Sign up</button>
-        
-        </div>
-        <div class="right-side">
-          <div class="img-holder">
-            <p>
-              this is placeholder for an image
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- random info section -->
-      <div class="info-wrapper">
-      <h2>Some random information</h2>
-      <div class="random-info-wrapper">
-       
-        <div class="info-one">
-          <div class="box-one"></div>
-          <p class="desc">This is some text under an illustration or image</p>
-        </div>
-        <div class="info-one">
-          <div class="box-one"></div>
-          <p class="desc">This is some text under an illustration or image</p>
-        </div>
-        <div class="info-one">
-          <div class="box-one"></div>
-          <p class="desc">This is some text under an illustration or image</p>
-        </div>
-        <div class="info-one">
-          <div class="box-one"></div>
-          <p class="desc">This is some text under an illustration or image</p>
-        </div>
-      </div>
-    </div>
-    <!-- Testimonial section -->
-    <div class="testimo-wrapper">
-      <div class="quote">
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat quia corporis voluptatum pariatur. Voluptatum, quas iure. Voluptates, tenetur. Corporis itaque iste, pariatur temporibus dolorum doloribus quo voluptatem consectetur aliquam cupiditate.
-      </div>
-      <p>--Lorem ipsum</p>
-    </div>
-    <!-- Call to action -->
-    <div class="action-wrapper">
-      <div class="action-left">
-        <h3>Call to action! it's time!</h3>
-        <p>Sign up for our product by clicking the button right over there!</p>
-      </div>
-      <div class="action-right">
-        <button>
-          Sign up
-        </button>
-      </div>
-    </div>
-    <!-- Footer -->
-    <footer>
-      <p>Copyright &#169; the odin project</p>
-    </footer>
-    </main>
+      </main>
+
   </body>
 </html>
